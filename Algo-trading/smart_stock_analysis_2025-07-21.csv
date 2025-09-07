@@ -1,0 +1,4 @@
+Ticker,MA Crossover,RSI(30),MACD,Bollinger Bands,Volatility (ATR),Earnings Proximity,FA Override,Final Decision
+AAPL,Buy,Hold,Buy,Hold,0.0184,No Data,Weak,Buy
+MSFT,Buy,Hold,Sell,Hold,0.0127,No Data,Weak,Hold
+TSLA,Sell,Hold,Buy,Hold,0.042,No Data,Weak,Hold
