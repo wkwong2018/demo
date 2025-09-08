@@ -6,8 +6,8 @@ set "TaskFolder=%~dp0"
 for %%I in ("%TaskFolder%..") do set "ParentFolder=%%~nI"
 set "SchedulerFolder=\%ParentFolder%"
 
-set "User=corp\zk4q06n"
-set "PasswordFile=C:\password.ini"
+set "User=corp\xxxxxxx"
+set "PasswordFile=C:\xxxxxxx.ini"
 
 :: Check if password file exists
 if not exist "%PasswordFile%" (
