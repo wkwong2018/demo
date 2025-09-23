@@ -1,0 +1,10 @@
+{
+  "position_limit": 1000000,
+  "restricted_symbols": ["ABCX", "XYZR"],
+  "notional_threshold": 5000000,
+  "market_hours": { "start": "09:30", "end": "16:00" },
+  "api_endpoints": [
+    "https://example.com/api/trades",
+    "https://example.com/api/positions"
+  ]
+}
