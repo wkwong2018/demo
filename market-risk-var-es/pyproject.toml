@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "market-risk-var-es"
+version = "0.1.0"
+description = "One-day historical and parametric VaR, Expected Shortfall, and coverage backtests."
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["value-at-risk", "expected-shortfall", "market-risk", "backtesting"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+market-risk = "market_risk.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/wkwong2018/demo"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
