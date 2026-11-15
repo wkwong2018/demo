@@ -1,0 +1,39 @@
+# Tests for market-risk-var-es only. Path filters keep this job off unrelated folders.
+name: market-risk-var-es
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "market-risk-var-es/**"
+      - ".github/workflows/market-risk-var-es.yml"
+  push:
+    branches: [main]
+    paths:
+      - "market-risk-var-es/**"
+      - ".github/workflows/market-risk-var-es.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: pytest
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: market-risk-var-es
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install the project and test tools
+        run: python -m pip install --upgrade pip && python -m pip install -e ".[dev]"
+
+      - name: Run tests
+        run: python -m pytest
