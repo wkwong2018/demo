@@ -4,6 +4,8 @@ One-day Value at Risk (VaR) and Expected Shortfall (ES) for a small constant-wei
 
 This is a personal methodology demo for interviews. It is not a risk system, not a limit framework, and not investment advice. It is not affiliated with any employer. The numbers come from a recorded file of public ETF prices. Nothing here is private market data or a proprietary model.
 
+See also [market-risk-streaming-lake](../market-risk-streaming-lake/), which streams synthetic risk events into a small lake and can export a price-index CSV for this engine. That export does not change the calculations below.
+
 ## Quick start
 
 ```bash

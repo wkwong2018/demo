@@ -1,0 +1,28 @@
+# Illustrative book limits for the synthetic demo.
+# A breach here is a scripted teaching case, not a capital limit.
+# Amounts are USD. daily_loss and var are loss thresholds (a larger loss is worse).
+# notional is gross absolute market value.
+# index_name is the column written for the sibling price-index CSV.
+
+currency: USD
+confidence: 0.95
+var_window: 40
+books:
+  - desk: EQ-DELTA-1
+    book: EQ-DELTA-1-BOOK-A
+    index_name: SYN-EQ
+    notional: 4000000
+    daily_loss: 200000
+    var: 80000
+  - desk: FI-RATES-1
+    book: FI-RATES-1-BOOK-A
+    index_name: SYN-FI
+    notional: 12000000
+    daily_loss: 80000
+    var: 60000
+  - desk: FX-SPOT-1
+    book: FX-SPOT-1-BOOK-A
+    index_name: SYN-FX
+    notional: 3000000
+    daily_loss: 40000
+    var: 25000

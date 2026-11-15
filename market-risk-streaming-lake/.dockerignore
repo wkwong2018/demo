@@ -1,0 +1,6 @@
+.venv
+lake
+**/__pycache__
+.pytest_cache
+*.egg-info
+.git
