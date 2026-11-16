@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "market-risk-streaming-lake"
+version = "0.1.0"
+description = "Synthetic market-risk streaming ingest, a bronze/silver/gold lake, and book limit monitoring."
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["market-risk", "kafka", "data-lake", "limit-monitoring"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "pyarrow>=14",
+    "pyyaml>=6",
+]
+
+[project.optional-dependencies]
+kafka = ["kafka-python>=2.0.2"]
+azure = ["azure-storage-file-datalake>=12.14"]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+risk-lake = "risk_lake.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/wkwong2018/demo"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+risk_lake = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
