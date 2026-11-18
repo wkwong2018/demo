@@ -32,6 +32,7 @@ from market_risk.version import __version__
 __all__ = [
     "MarketRiskError",
     "SAMPLE_WEIGHTS",
+    "__version__",
     "align_weights",
     "bundled_sample_prices_path",
     "christoffersen_conditional_coverage",
