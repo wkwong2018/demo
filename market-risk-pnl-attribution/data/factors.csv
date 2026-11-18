@@ -1,0 +1,4 @@
+factor,simple_return
+EQ,0.01
+RT,0.005
+FX,-0.02
