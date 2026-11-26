@@ -1,0 +1,9 @@
+instrument,factor,beta
+SYN-EQ-A,EQ,1
+SYN-EQ-B,EQ,1
+SYN-EQ-B,RT,0.5
+SYN-RT-A,RT,0.5
+SYN-FX-A,FX,1
+SYN-EQ-C,EQ,1
+SYN-RT-B,RT,1
+SYN-FX-B,FX,1
