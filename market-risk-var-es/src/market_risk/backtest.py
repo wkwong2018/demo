@@ -171,7 +171,6 @@ def christoffersen_independence(
     counts = transition_counts(hits)
     size = validate_significance(significance)
     hit_transitions = counts.n01 + counts.n11
-    quiet_transitions = counts.n00 + counts.n10
     restricted = _binomial_loglik(hit_transitions, counts.n_transitions, counts.pi)
 
     unrestricted = 0.0

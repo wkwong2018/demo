@@ -67,3 +67,5 @@ def test_workflow_runs_only_this_project():
     assert "Algo-trading" not in text
     assert "mini-RPA" not in text
     assert "python -m pytest" in text
+    assert "python -m ruff check ." in text
+    assert "continue-on-error" not in text
