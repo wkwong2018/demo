@@ -2,6 +2,8 @@
 
 Personal collection of small, independent demos. Each folder stands alone.
 
+Personal site: [docs/](docs/) (https://wkwong2018.github.io/demo/ after GitHub Pages is enabled).
+
 - [Algo-trading](Algo-trading/) — Python scripts that screen stocks and ETFs and write a technical and fundamental summary. `main.py` runs the screener on Tuesdays and Thursdays, and runs the analyzer whenever the script starts.
 - [convert_xls_to_xlsx](convert_xls_to_xlsx/) — VBScript that uses Excel to save an `.xls` workbook as `.xlsx`.
 - [log_monitoring](log_monitoring/) — VBScript that polls a log directory and can stop a matching process that has run past a time limit, then writes an alert.

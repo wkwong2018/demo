@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ricky Wong · VP Software Engineer at BAML</title>
+  <meta name="description" content="VP Software Engineer at BAML | Market Risk Reporting &amp; Real-Time Risk Systems. Hong Kong SAR.">
+  <meta name="author" content="Ricky Wong">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#1c4a42">
+  <link rel="canonical" href="https://wkwong2018.github.io/demo/">
+  <link rel="icon" href="/demo/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/demo/fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/demo/fonts/newsreader-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/demo/styles.css">
+</head>
+<body>
+  <a class="skip" href="/demo/#top">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/demo/#top">Ricky Wong</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/demo/#about">About</a></li>
+          <li><a href="/demo/#projects">Projects</a></li>
+          <li><a href="/demo/#experience">Experience</a></li>
+          <li><a href="/demo/#skills">Skills</a></li>
+          <li><a href="/demo/#certificates">Certificates</a></li>
+          <li><a href="/demo/#education">Education</a></li>
+          <li><a href="/demo/#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <header class="hero wrap" id="top" tabindex="-1">
+      <p class="kicker">Hong Kong SAR</p>
+      <h1>Ricky Wong</h1>
+      <p class="lede">VP Software Engineer at BAML | Market Risk Reporting &amp; Real-Time Risk Systems</p>
+      <ul class="contact-links">
+        <li><a href="https://www.linkedin.com/in/wkwong3">LinkedIn</a></li>
+        <li><a href="https://github.com/wkwong2018">GitHub</a></li>
+      </ul>
+    </header>
+
+    <section id="about" class="wrap">
+      <p class="section-index" aria-hidden="true">01</p>
+      <h2>About</h2>
+      <div class="measure">
+        <p>VP-grade Software Engineer specializing in market risk reporting and scalable system design. Experienced in building efficient reporting workflows while exploring modern architectures with Kafka, PySpark, and data lake solutions.</p>
+        <p>Skilled in designing resilient frameworks that balance compliance, transparency, and performance. Actively leveraging AI tools such as GitHub Copilot to accelerate development, improve code quality, and enhance productivity.</p>
+        <p>Passionate about evolving risk technology from reporting automation toward real-time, distributed systems that empower smarter decision-making.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="wrap">
+      <p class="section-index" aria-hidden="true">02</p>
+      <h2>Projects</h2>
+      <p class="measure lead">Market-risk projects from <a href="https://github.com/wkwong2018/demo">this repository</a> are listed first. They are not investment advice and are not affiliated with any employer.</p>
+
+      <article class="feature" id="market-risk-var-es">
+        <p class="eyebrow">market-risk-var-es</p>
+        <h3>Market risk VaR and Expected Shortfall</h3>
+        <div class="measure">
+          <p>One-day Value at Risk (VaR) and Expected Shortfall (ES) for a small constant-weight portfolio, with the two standard coverage backtests: Kupiec unconditional coverage, and Christoffersen independence and conditional coverage. Historical and parametric (variance-covariance) estimates are both included. The numbers come from a recorded file of public ETF prices.</p>
+          <p class="source"><a href="https://github.com/wkwong2018/demo/tree/main/market-risk-var-es">market-risk-var-es on GitHub</a></p>
+        </div>
+        <h4>Value at Risk and Expected Shortfall | Market Risk Methodology Demo</h4>
+        <figure>
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/dSYkGqhRkxQ"
+              title="Value at Risk and Expected Shortfall | Market Risk Methodology Demo"
+              width="560"
+              height="315"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+              allowfullscreen></iframe>
+          </div>
+          <figcaption>
+            <a href="https://youtu.be/dSYkGqhRkxQ">Watch “Value at Risk and Expected Shortfall | Market Risk Methodology Demo” on YouTube</a>
+            <span>About 4 minutes 15 seconds</span>
+          </figcaption>
+        </figure>
+      </article>
+
+      <article class="feature" id="market-risk-streaming-lake">
+        <p class="eyebrow">market-risk-streaming-lake</p>
+        <h3>Market risk streaming lake</h3>
+        <div class="measure">
+          <p>A small batch pipeline for synthetic market-risk reporting. A producer writes factor, position, and P&amp;L events to a bus. A consumer lands them in a bronze / silver / gold Parquet lake, scores book limits, and prints a short explanation of one breach. The default run uses an in-process bus, a local directory as the lake, and a fixed text template. Apache Kafka, Azure Data Lake Storage Gen2, and an OpenAI-compatible model are optional and stay off unless turned on.</p>
+          <p class="source"><a href="https://github.com/wkwong2018/demo/tree/main/market-risk-streaming-lake">market-risk-streaming-lake on GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="feature" id="market-risk-pnl-attribution">
+        <p class="eyebrow">market-risk-pnl-attribution</p>
+        <h3>Market risk P&amp;L attribution</h3>
+        <div class="measure">
+          <p>One session of linear P&amp;L for a small snapshot book, split into the market move on the opening quantity and the P&amp;L from a quantity change, then a stated-beta factor split of the market piece. The book, the prices, and the factor returns are synthetic.</p>
+          <p class="source"><a href="https://github.com/wkwong2018/demo/tree/main/market-risk-pnl-attribution">market-risk-pnl-attribution on GitHub</a></p>
+        </div>
+      </article>
+
+      <h3 class="samples-heading">Other samples</h3>
+      <dl class="samples">
+        <div>
+          <dt><a href="https://github.com/wkwong2018/demo/tree/main/Algo-trading">Algo-trading</a></dt>
+          <dd>Python scripts that screen stocks and ETFs and write a technical and fundamental summary.</dd>
+        </div>
+        <div>
+          <dt><a href="https://github.com/wkwong2018/demo/tree/main/convert_xls_to_xlsx">convert_xls_to_xlsx</a></dt>
+          <dd>VBScript that uses Excel to save an <code>.xls</code> workbook as <code>.xlsx</code>.</dd>
+        </div>
+        <div>
+          <dt><a href="https://github.com/wkwong2018/demo/tree/main/log_monitoring">log_monitoring</a></dt>
+          <dd>VBScript that polls a log directory and can stop a matching process that has run past a time limit, then writes an alert.</dd>
+        </div>
+        <div>
+          <dt><a href="https://github.com/wkwong2018/demo/tree/main/mini-RPA">mini-RPA</a></dt>
+          <dd>Python sketch that reads trades from a CSV, SQLite, or HTTP endpoint and flags breaches of the limits in <code>config.json</code>.</dd>
+        </div>
+        <div>
+          <dt><a href="https://github.com/wkwong2018/demo/tree/main/task-scheduler-auto-importer">task-scheduler-auto-importer</a></dt>
+          <dd>Windows batch file that creates a Task Scheduler folder and imports XML task definitions from the same directory.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="experience" class="wrap">
+      <p class="section-index" aria-hidden="true">03</p>
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article class="role">
+          <p class="when"><span>Jun 2022 – Present</span><span>4 yrs 6 mos</span></p>
+          <div>
+            <h3>Vice President, Software Engineer</h3>
+            <p class="org-line">Bank of America Merrill Lynch · Full-time</p>
+            <p class="where">Hong Kong SAR</p>
+            <p>Architected and enhanced enterprise Risk Management systems, boosting resilience, automating Market Risk reporting, and partnering globally to deliver scalable improvements with strong governance frameworks.</p>
+            <p class="skill-note">Skills: Generative AI Development, Risk Management</p>
+          </div>
+        </article>
+
+        <article class="org">
+          <header class="org-head">
+            <h3>HSBC</h3>
+            <p>Full-time · 3 yrs 10 mos</p>
+          </header>
+          <article class="role">
+            <p class="when"><span>Jan 2021 – Jun 2022</span><span>1 yr 6 mos</span></p>
+            <div>
+              <h4>Vice President, Integration Manager</h4>
+              <p class="where">Hong Kong SAR</p>
+              <p>Spearheaded enterprise integrations to onboard corporate clients, streamlining payroll and cross-border transfers, minimizing onboarding friction, and delivering seamless connectivity via H2H, XAPI, SWIFT, and PayMe.</p>
+            </div>
+          </article>
+          <article class="role">
+            <p class="when"><span>Sep 2018 – Dec 2020</span><span>2 yrs 4 mos</span></p>
+            <div>
+              <h4>Vice President, Development Specialist</h4>
+              <p class="where">Hong Kong SAR</p>
+              <p>Led and mentored a 10-member engineering team in Xi'an, revamping corporate internet banking with React and Node.js, managing cross-functional projects, and ensuring platform stability.</p>
+              <p class="skill-note">Skills: System Architecture</p>
+            </div>
+          </article>
+        </article>
+
+        <article class="role">
+          <p class="when"><span>Feb 2015 – Sep 2018</span><span>3 yrs 8 mos</span></p>
+          <div>
+            <h3>Founder &amp; Lead Developer | AI, Machine Learning, and Mobile App Development</h3>
+            <p class="org-line">Self-employed · Self-employed</p>
+            <p class="where">Hong Kong</p>
+            <p>Led AI and machine learning solution development, launched mobile apps, and managed all aspects of a startup, driving product innovation from concept to launch.</p>
+          </div>
+        </article>
+
+        <article class="role">
+          <p class="when"><span>Jul 2014 – Feb 2015</span><span>8 mos</span></p>
+          <div>
+            <h3>Assistant Manager, Project Manager</h3>
+            <p class="org-line">Shanghai Commercial Bank Ltd · Full-time</p>
+            <p class="where">Hong Kong</p>
+          </div>
+        </article>
+
+        <article class="role">
+          <p class="when"><span>Jan 2014 – Jul 2014</span><span>7 mos</span></p>
+          <div>
+            <h3>Assistant Manager, Project Manager</h3>
+            <p class="org-line">Dah Sing Bank · Full-time</p>
+          </div>
+        </article>
+
+        <article class="role">
+          <p class="when"><span>Sep 2009 – Dec 2013</span><span>4 yrs 4 mos</span></p>
+          <div>
+            <h3>Assistant Manager, Programmer</h3>
+            <p class="org-line">ICBC (Asia) · Full-time</p>
+            <p class="where">Hong Kong SAR</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="wrap">
+      <p class="section-index" aria-hidden="true">04</p>
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <article class="skill">
+          <h3>Risk Management</h3>
+          <p>Vice President, Software Engineer at Bank of America Merrill Lynch</p>
+        </article>
+        <article class="skill">
+          <h3>Apache Kafka</h3>
+          <ul class="detail-list">
+            <li>Foundations of Apache Kafka: Concepts, Architecture, &amp; Core Principles</li>
+            <li>Working with Apache Kafka Topics, Producers, and Consumers</li>
+            <li>Processing Data: Integrating Kafka with Python &amp; Using Consumer Groups</li>
+          </ul>
+        </article>
+        <article class="skill">
+          <h3>Azure Data Lake</h3>
+          <ul class="detail-list">
+            <li>Azure Data Fundamentals: Azure Data Lake Storage</li>
+          </ul>
+        </article>
+        <article class="skill">
+          <h3>System Architecture</h3>
+          <ul class="detail-list">
+            <li>2 experiences at Bank of America Merrill Lynch and 1 other company</li>
+            <li>3 endorsements</li>
+          </ul>
+        </article>
+        <article class="skill">
+          <h3>Generative AI Development</h3>
+          <ul class="detail-list">
+            <li>Vice President, Software Engineer at Bank of America Merrill Lynch</li>
+            <li>Measuring and Assessing AI Risks</li>
+            <li>NIST RMF for AI Risk Management</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="certificates" class="wrap">
+      <p class="section-index" aria-hidden="true">05</p>
+      <h2>Licenses &amp; certifications</h2>
+      <div class="cert-list">
+        <article class="cert">
+          <h3>NIST RMF for AI Risk Management</h3>
+          <p>Skillsoft · Issued Aug 2026</p>
+          <p class="cred-id">Credential ID 191605810</p>
+          <p class="skill-note">Skills: Generative AI Development</p>
+        </article>
+        <article class="cert">
+          <h3>Measuring and Assessing AI Risks</h3>
+          <p>Skillsoft · Issued Aug 2026</p>
+          <p class="cred-id">Credential ID 191589995</p>
+          <p class="skill-note">Skills: Generative AI Development</p>
+        </article>
+        <article class="cert">
+          <h3>Final Exam: Apache Kafka</h3>
+          <p>Skillsoft · Issued Aug 2026</p>
+          <p class="cred-id">Credential ID 191579736</p>
+          <p class="skill-note">Skills: Apache Kafka</p>
+        </article>
+        <article class="cert">
+          <h3>Processing Data: Using Kafka with Cassandra &amp; Confluent</h3>
+          <p>Skillsoft · Issued Aug 2026</p>
+          <p class="cred-id">Credential ID 191578695</p>
+          <p class="skill-note">Skills: Apache Kafka</p>
+        </article>
+        <article class="cert">
+          <h3>Working with Apache Kafka Topics, Producers, and Consumers</h3>
+          <p>Skillsoft · Issued Jul 2026</p>
+          <p class="cred-id">Credential ID 190111395</p>
+          <p class="skill-note">Skills: Apache Kafka</p>
+        </article>
+        <article class="cert">
+          <h3>Foundations of Apache Kafka: Concepts, Architecture, &amp; Core Principles</h3>
+          <p>Skillsoft · Issued Jul 2026</p>
+          <p class="cred-id">Credential ID 190062949</p>
+          <p class="skill-note">Skills: Apache Kafka</p>
+        </article>
+        <article class="cert">
+          <h3>Azure Data Fundamentals: Azure Data Lake Storage</h3>
+          <p>Skillsoft · Issued Jul 2026</p>
+          <p class="cred-id">Credential ID 189975297</p>
+          <p class="skill-note">Skills: Azure Data Lake</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="wrap">
+      <p class="section-index" aria-hidden="true">06</p>
+      <h2>Education</h2>
+      <div class="timeline">
+        <article class="role">
+          <p class="when"><span>2012 – 2014</span></p>
+          <div>
+            <h3>The University of Hong Kong</h3>
+            <p class="org-line">Master's degree, E-Commerce &amp; Internet Computing</p>
+          </div>
+        </article>
+        <article class="role">
+          <p class="when"><span>2006 – 2009</span></p>
+          <div>
+            <h3>The University of Hong Kong</h3>
+            <p class="org-line">Bachelor's degree, Computer Science</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="wrap">
+      <p class="section-index" aria-hidden="true">07</p>
+      <h2>Contact</h2>
+      <p class="byline">Ricky Wong · Hong Kong SAR</p>
+      <ul class="contact-links">
+        <li><a href="https://www.linkedin.com/in/wkwong3">LinkedIn</a></li>
+        <li><a href="https://github.com/wkwong2018">GitHub</a></li>
+      </ul>
+      <p class="colophon">Newsreader and Atkinson Hyperlegible are used under the <a href="/demo/fonts/OFL.txt">SIL Open Font License</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
